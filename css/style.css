@@ -26,12 +26,13 @@ body
 .pic:before
 {
   content: '';
-  margin-top:-63px;
+  margin-top:-83px;
   margin-left:-80px;
   position: absolute;
   width: 550px;
   height: 550px;
-  background: url('.jpg') center center;
+  background: url('../images/MD.jpg') center center;
+  background-size: 500px 500px;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -59,15 +60,17 @@ body
 .box1:before
 {
   content: '';
-  margin-top:-25px;
-  margin-left:-31px;
+  margin-top:-50px;
+  margin-left:-51px;
   position: absolute;
   width: 200px;
   height: 200px;
-  background: url('http://creek.themebucket.net/wp-content/uploads/2015/09/8.jpg') center center;
+  background: url('../images/insta.png') center center;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  transform: rotate(0deg);
 }
 
 .box2
@@ -340,7 +343,7 @@ header::after {
 }
 
 @media (min-width: 700px) {
-  
+
   .menu-toggle {
     display: none;
   }
@@ -372,4 +375,15 @@ header::after {
     display: none;
   }
   
+}
+
+@media (max-width: 990px) {
+
+*{
+    margin-left: 3em;
+  }
+
+  .containers{
+    margin-left: 12em;
+  }
 }
